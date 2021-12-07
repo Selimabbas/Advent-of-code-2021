@@ -9,9 +9,7 @@ fun main() {
             .map { it.toInt() }
             .toMutableList()
 
-    var day = 0
-    while (day < 80) {
-        day++
+    for (day in 0 until 80) {
         for (i in 0 until fishes.size) {
             val fish = fishes[i]
             if (fish == 0) {
